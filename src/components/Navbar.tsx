@@ -22,11 +22,15 @@ const Navbar = () => {
     <header className="sticky top-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
       <nav className="container mx-auto flex items-center justify-between px-6 py-4">
         <Link to="/" className="font-display text-2xl font-semibold tracking-wide text-foreground">
-          Zee <span className="text-gold">Aesthetics</span>
+       <img
+          src="https://res.cloudinary.com/depeqzb6z/image/upload/v1772795782/5FC2D984-7EE2-4040-A9AF-E3E40E338903-removebg-preview_z7jrad.png"
+          alt="Logo"
+          className="h-20 w-32 sm:w-40 md:w-48 lg:w-56 inline-block mr-2 object-contain"
+        />
         </Link>
 
         {/* Desktop Nav */}
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden md:flex items-center gap-8 mr-10">
           {links.map((link) => (
             <Link
               key={link.to}
